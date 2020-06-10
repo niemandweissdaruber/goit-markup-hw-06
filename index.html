@@ -63,9 +63,11 @@
             <br />
             для вашего бизнеса
           </h1>
-          <a href="" class="button order">Заказать услугу</a>
+          <button data-modal-open class="button order">Заказать услугу</button>
+          <!-- <a href="" class="button order" data-modal-open>Заказать услугу</a> -->
         </div>
       </section>
+
       <!-- Примущества -->
       <section class="advantages section">
         <div class="container">
@@ -409,7 +411,7 @@
           <form class="subscribe-form">
             <label for="mail">Подпишитесь на рассылку</label>
             <div class="form-wrapper">
-              <input type="mail" name="mail" id="mail" placeholder="E-mail" />
+              <input type="mail" name="mail" id="mail" placeholder="E-mail" value="mail" />
               <a href="" class="button subscribe-button">Подписаться</a>
             </div>
           </form>
@@ -417,5 +419,14 @@
       </div>
       <p class="bottom">2020 | Developed by GoIT Students</p>
     </footer>
+
+    <!-- Модальное окно -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button data-modal-close>Close</button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
