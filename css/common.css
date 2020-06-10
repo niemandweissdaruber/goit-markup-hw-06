@@ -211,18 +211,6 @@ footer {
   color: var(--white-color);
 }
 
-.text-footer {
-  margin-top: 5px;
-  margin-bottom: 21px;
-
-  color: var(--white-color);
-
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-}
-
 .contacts-container .mail-footer,
 .contacts-container .phone-footer {
   color: rgba(255, 255, 255, 0.6);
@@ -282,6 +270,7 @@ footer {
 
 .subscribe-button {
   padding: 10px 28px;
+  margin-left: 12px;
 
   overflow: hidden;
 }
@@ -341,6 +330,60 @@ footer {
   background-color: var(--accent-color);
 }
 
+.socials-container {
+  margin-left: 69px;
+  margin-top: 4px;
+}
+
 .icon-footer {
   fill: currentColor;
+}
+
+/* ФОРМА ПОДПИСКИ*/
+
+.form-wrapper {
+  display: flex;
+
+  margin-top: 20px;
+}
+
+.subscribe-form label,
+.text-footer {
+  color: var(--white-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.text-footer {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.subscribe-container {
+  width: 570px;
+  margin-left: 94px;
+}
+
+.subscribe-form input {
+  width: 358px;
+  height: 50px;
+  padding: 0px 12px;
+  font-size: 16px;
+  line-height: 1.87;
+
+  background-color: #2f303a;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.subscribe-form input:focus {
+  outline: none;
+  border: 1px solid rgb(223, 223, 223);
+
+  transition: border 250ms var(--cubic);
 }
