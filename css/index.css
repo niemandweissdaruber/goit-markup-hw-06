@@ -466,6 +466,7 @@ html {
 .form button {
   display: flex;
   justify-content: center;
+  margin-top: 30px;
 }
 
 .form-label {
@@ -514,3 +515,44 @@ html {
 }
 
 /* ЧЕКБОКС */
+
+.checkbox-area {
+  position: relative;
+}
+
+.checkbox {
+  position: absolute;
+  margin: 5px 14px;
+
+  width: 15.9px;
+  height: 15px;
+
+  background-image: url(../images/form/uncheck.svg);
+
+  transition: background-color 250ms var(--cubic);
+}
+
+.check-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.policy {
+  margin-left: 40px;
+}
+
+.check-input:checked + .checkbox {
+  /* border: 2px solid var(--accent-color); */
+  background-color: var(--accent-color);
+  background-origin: border-box;
+
+  background-image: url(../images/form/check.svg);
+  background-size: contain;
+  border-radius: 2px;
+}
