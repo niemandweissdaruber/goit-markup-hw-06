@@ -49,9 +49,6 @@ html {
 }
 
 .order {
-  margin: 0 auto;
-  border: none;
-
   font-weight: 700;
 }
 
@@ -507,7 +504,8 @@ html {
   transition: transform 250ms var(--cubic);
 }
 
-.form-field:focus-within .comment-label {
+.form-field:focus-within > .comment-label,
+.form-input:not(:placeholder-shown) + .comment-label {
   color: var(--accent-color);
   transform: translate(-8px, -37px) scale(0.9);
 }
